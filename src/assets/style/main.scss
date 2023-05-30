@@ -1,0 +1,29 @@
+// // SETUP
+// @import 'setup/typography';
+@import 'setup/vars';
+@import 'setup/mixins.scss';
+@import 'setup/functions';
+
+// // BASICS
+@import 'basics/helpers';
+@import 'basics/_base';
+@import 'basics/_layout';
+
+// // PAGES
+@import 'pages/_toy-index.scss';
+@import 'pages/_toy-details.scss';
+@import 'pages/_home-page.scss';
+@import 'pages/dashboard.scss';
+@import 'pages/_about.scss';
+@import 'pages/_login.scss';
+@import 'pages/review';
+
+// // COMPONENTS
+@import 'cmps/main-header';
+@import 'cmps/main-footer';
+@import 'cmps/toy-list';
+@import 'cmps/toy-filter';
+@import 'cmps/toy-sort';
+@import 'cmps/toy-preview';
+@import 'cmps/toy-add';
+@import 'cmps/user-msg';

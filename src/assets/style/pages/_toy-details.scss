@@ -1,0 +1,104 @@
+h2 {
+  padding-bottom: 1rem;
+}
+
+.details-container {
+  background-color: $clr5;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid $clr4;
+  padding: 10px;
+  min-height: 600px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 680px) {
+    min-height: 350px;
+    min-width: 350px;
+    align-items: flex-start;
+
+    .add-msg-form {
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 400px) {
+    min-height: 250px;
+    min-width: 250px;
+    align-items: flex-start;
+
+    .add-msg-form {
+      align-items: flex-start;
+    }
+  }
+}
+
+.toy-info {
+  line-height: 1em;
+}
+
+.details-toy-img {
+  width: 100%;
+  height: auto;
+  max-height: 170px;
+  padding: 1.6rem;
+  object-fit: contain;
+}
+
+.add-msg-btn,
+.add-review-btn {
+  @include btn(
+    $type: round,
+    $padding: em(8px) em(24px),
+    $bg: $clr5,
+    $clr: $clr0
+  );
+}
+
+.add-msg-form {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.add-review-form {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+  .msg-input {
+    @include input();
+  }
+
+  textarea {
+    width: 25rem;
+  }
+}
+
+.msg-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .remove-msg {
+    cursor: pointer;
+  }
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .remove-review {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,33 @@
+.toy-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.input-filter {
+  @include input($type: round, $width: 300px);
+  margin-bottom: 20px;
+}
+
+.label-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .filter-select {
+    height: 20px;
+  }
+}
+
+.bottom-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-btn-container {
+  display: flex;
+}
